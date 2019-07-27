@@ -21,46 +21,45 @@
     // 百度地图API功能
     map = new BMap.Map("allmap");
     map.centerAndZoom(new BMap.Point(106, 37), 5);
-    var data_info = [[120.09334,30.308693,"浙江大学：胡易平"],
-        [113.576748,22.154118,"澳门科技大学：傅展超、薛安琪"],
-        [123.424477,41.770971,"东北大学：文兆冬"],
-        [118.82648,31.893974,"东南大学：刘天懿"],
-        [113.378643,23.047163,"广州大学：刘婧宜"],
-        [126.688328,45.78251,"哈尔滨工程大学：周拓、马佳欣"],
-        [110.345932,20.064369,"海南大学：肖欣怡"],
-        [112.683061,26.887123,"衡阳师范大学：杨雨帆"],
-        [112.925737,28.225764,"湖南工商大学：邓溪钰"],
-        [112.925998,27.910548,"湖南科技大学：杨乐、张慧"],
-        [112.955956,28.193112,"湖南师范大学：刘诗雨"],
-        [113.386582,23.058768,"华南师范大学：易汇群"],
-        [114.419826,30.518754,"华中科技大学：曹亦闲、熊雨琦、范奥"],
-        [109.731388,28.293269,"吉首大学：郭秋雨"],
-        [120.285164,31.489853,"江南大学：胡晶"],
-        [112.595221,26.903847,"南华大学：夏思怡、习嘉慧、莫晴儿"],
-        [118.826737,32.041196,"南京航空航天大学：蔡可、陈宇翔"],
-        [122.064651,37.538457,"山东大学威海分校：张嘉毅"],
-        [123.413949,41.932252,"沈阳航空航天大学：高景明"],
-        [123.522614,41.749347,"沈阳建筑大学：陈颖志"],
-        [86.064688,44.309995,"石河子大学：夏伟"],
-        [112.528506,37.866671,"太原理工大学：丁弘宇"],
-        [114.372921,30.543803,"武汉大学：宋楚粮"],
-        [114.397046,30.508165,"武汉工程大学：符海西"],
-        [114.357936,30.526212,"武汉理工大学：周全"],
-        [108.840053,34.129522,"西安电子科技大学：刘俊材"],
-        [108.990166,34.252359,"西安交通大学：张婷"],
-        [108.921892,34.250383,"西北工业大学：徐溢"],
-        [112.870634,27.887929,"湘潭大学：胡伟民、熊哲清"],
-        [108.953535,34.23466,"长安大学：莫啸涛"],
-        [125.320006,43.842539,"长春理工大学：何晴宇"],
-        [113.015628,28.073469,"长沙理工大学：周弘毅、符章捷、付明、高傲、王锦、王禧龙、詹逸凡"],
-        [117.276137,31.842919,"中国科学技术大学：刘欢"],
-        [117.15175,34.220392,"中国矿业大学：贾峥嵘"],
-        [118.549523,37.474993,"中国石油大学：易聪"],
-        [114.392245,30.480519,"中南财经政法大学：陈红、刘金"],
-        [112.934197,28.1772,"中南大学：蔡仕翔、苏文超、朱文韬、萧鸿猷、邓缘圆、郑咏琦、张科"],
-        [113.001233,28.137636,"中南林业科技大学：李孟龙"],
-        [104.055792,30.700724,"西南交通大学：刘鑫"],
-        [113.357822,23.144884,"华南师范大学：易汇群"],
+    var data_info = [[120.09334, 30.308693, "浙江大学", "胡易平", "img/Zhejiang_University.png"],
+        [113.576748,22.154118,"澳门科技大学","傅展超、薛安琪", "img/Macau_University_of_Science_and_Technology.png"],
+        [123.424477,41.770971,"东北大学","文兆冬", "img/Northeastern_University.png"],
+        [118.82648,31.893974,"东南大学","刘天懿", "img/Southeast_University.png"],
+        [113.378643,23.047163,"广州大学","刘婧宜", "img/Guangzhou_University.png"],
+        [126.688328,45.78251,"哈尔滨工程大学","周拓、马佳欣", "img/Harbin_Engineering_University.jpg"],
+        [110.345932,20.064369,"海南大学","肖欣怡", "img/Hainan_University.jpg"],
+        [112.683061,26.887123,"衡阳师范大学","杨雨帆", "img/Hengyang_Normal_University.jpg"],
+        [112.925737,28.225764,"湖南工商大学","邓溪钰", "img/Hunan_University_of_Technology_and_Business.png"],
+        [112.925998,27.910548,"湖南科技大学","杨乐、张慧", "img/Hunan_University_of_Techonology.png"],
+        [112.955956,28.193112,"湖南师范大学","刘诗雨", "img/Hunan_Normal_University.jpg"],
+        [113.386582,23.058768,"华南师范大学","易汇群", "img/South_China_Normal_University.jpg"],
+        [114.419826,30.518754,"华中科技大学","曹亦闲、熊雨琦、范奥", "img/Huazhong_University_of_Science_and_Techology.jpg"],
+        [109.731388,28.293269,"吉首大学","郭秋雨", "img/Jishou_University.jpg"],
+        [120.285164,31.489853,"江南大学","胡晶", "img/Jiangnan_University.jpg"],
+        [112.595221,26.903847,"南华大学","夏思怡、习嘉慧、莫晴儿", "img/University_of_South_China.jpg"],
+        [118.826737,32.041196,"南京航空航天大学","蔡可、陈宇翔", "img/Nanjing University_Of_Aeronautics_And_Astronautics.jpg"],
+        [122.064651,37.538457,"山东大学威海分校","张嘉毅", "img/Shandong_University.jpg"],
+        [123.413949,41.932252,"沈阳航空航天大学","高景明", "img/Shenyang_Aerospace_University.jpg"],
+        [123.522614,41.749347,"沈阳建筑大学","陈颖志", "img/Shenyang_Jianzhu_University.jpg"],
+        [86.064688,44.309995,"石河子大学","夏伟", "img/Shihezi_University.jpg"],
+        [112.528506,37.866671,"太原理工大学","丁弘宇", "img/Taiyuan_University_Of_Technology.jpg"],
+        [114.372921,30.543803,"武汉大学","宋楚粮", "img/Wuhan_University.jpg"],
+        [114.397046,30.508165,"武汉工程大学","符海西", "img/Wuhan_Institute_Of_Technology.jpg"],
+        [114.357936,30.526212,"武汉理工大学","周全", "img/Wuhan_University_Of_Technology.jpg"],
+        [108.840053,34.129522,"西安电子科技大学","刘俊材", "img/Xidian_University.jpg"],
+        [108.990166,34.252359,"西安交通大学","张婷", "img/Xian_Jiaotong_University.jpg"],
+        [108.921892,34.250383,"西北工业大学","徐溢", "img/Northwestern_Polytechnical_University.png"],
+        [112.870634,27.887929,"湘潭大学","胡伟民、熊哲清", "img/Xiangtan_University.jpg"],
+        [108.953535,34.23466,"长安大学","莫啸涛", "img/Changan_University.jpg"],
+        [125.320006,43.842539,"长春理工大学","何晴宇", "img/Changchun_University_Of_Science_And_Technology.png"],
+        [113.015628,28.073469,"长沙理工大学","周弘毅、符章捷、付明、高傲、王锦、王禧龙、詹逸凡", "img/Changsha_University_Of_Science_And_Technology.jpg"],
+        [117.276137,31.842919,"中国科学技术大学","刘欢", "img/University_Of_Science_And_Technology_Of_China.jpg"],
+        [117.15175,34.220392,"中国矿业大学","贾峥嵘", "img/China_University_of_Mining_and_Technology.png"],
+        [118.549523,37.474993,"中国石油大学","易聪", "img/China_University_Of_Petroleum.jpg"],
+        [114.392245,30.480519,"中南财经政法大学","陈红、刘金", "img/Zhongnan_University_Of_Economics_And_Law.jpg"],
+        [112.934197,28.1772,"中南大学","蔡仕翔、苏文超、朱文韬、萧鸿猷、邓缘圆、郑咏琦、张科", "img/Central_South_University.jpg"],
+        [113.001233,28.137636,"中南林业科技大学","李孟龙", "img/Central_South_University_Of_Forestry_And_Technology.jpg"],
+        [104.055792,30.700724,"西南交通大学","刘鑫", "img/Southwest_Jiaotong_University.png"],
     ];
     var opts = {
         width : 250,     // 信息窗口宽度
@@ -73,12 +72,38 @@
         // map.enableDragging();   //两秒后开启拖拽
     }, 2000);  //2秒后放大到14级
     map.enableScrollWheelZoom(true);
+
+    // for(var i=0;i<data_info.length;i++){
+    //     var marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]));  // 创建标注
+    //     var content = data_info[i][2] + "：" + data_info[i][3];
+    //     map.addOverlay(marker);               // 将标注添加到地图中
+    //     addClickHandler(content,marker);
+    //     var sContent = getContent(data_info[i][2], data_info[i][3], "", i);
+    //     console.log(sContent);
+    // }
+
+    // var infoWindows = new Array();
+    // for(var i=0;i<data_info.length;i++){
+    //     var sContent = getContent(data_info[i][2], data_info[i][3], "img/zhejiangdaxue.png", i);
+    //     infoWindows[i] = new BMap.InfoWindow(sContent); // 创建信息窗口对象
+    // }
+    // console.log(infoWindows);
+
     for(var i=0;i<data_info.length;i++){
-        var marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]));  // 创建标注
-        var content = data_info[i][2];
-        map.addOverlay(marker);               // 将标注添加到地图中
-        addClickHandler(content,marker);
+        var marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]));
+        var sContent = getContent(data_info[i][2], data_info[i][3], data_info[i][4], i);
+        console.log(sContent);
+        let infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+        map.addOverlay(marker);
+        marker.addEventListener("click", function(){
+            this.openInfoWindow(infoWindow);
+            //图片加载完毕重绘infowindow
+            // document.getElementById("imgDemo" + i).onload = function(){
+            //     infoWindow.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+            // }
+        });
     }
+
     function addClickHandler(content,marker){
         marker.addEventListener("click",function(e){
             openInfo(content,e)}
@@ -89,5 +114,13 @@
         var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
         var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象
         map.openInfoWindow(infoWindow,point); //开启信息窗口
+    }
+
+    function getContent(school, students, img, i){
+        var sContent = "";
+        sContent += "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>" + school + "</h4>";
+        sContent += "<img style='float:right;margin:4px' id='imgDemo"+ i + "' src='" + img + "' width='100' height='100'/>";
+        sContent += "<div><p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + students + "</p></div>";
+        return sContent;
     }
 </script>
